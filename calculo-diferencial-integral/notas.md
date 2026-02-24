@@ -164,7 +164,7 @@ A ideia é decompor a região em triângulos.
 Dividimos a figura:
 
     A-------B
-     \  A  /
+     \  M  /
       \   /
        \_/
         N
