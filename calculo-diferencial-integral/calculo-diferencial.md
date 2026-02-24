@@ -108,8 +108,11 @@ $$
 ## Ideia geométrica (intuição)
 Considere dois pontos no gráfico com a mesma altura:
 
-f(x₁) = f(x₂)
+$$
+f(x_1) = f(x_2)
+$$
 
+$$
 Visualmente:
 
       •───•   ← mesma altura
@@ -117,57 +120,89 @@ Visualmente:
     /       \
 
 x₁           x₂
+$$
 
 À medida que:
-x₂ → x₁
+
+$$
+x_2 \to x_1
+$$
 
 Os dois pontos “colapsam” em um ponto especial — o vértice:
 
-x₁ ≈ x₂ ≈ xᵥ
+$$
+x_1 \approx x_2 \approx x_v
+$$
 
 ---
 
 ## Generalização (polinômio cúbico)
 
 Se:
-f(x) = ax³ + bx² + cx + d
+
+$$
+f(x) = ax^3 + bx^2 + cx + d
+$$
 
 Igualando:
-f(x₁) = f(x₂)
 
-a(x₁³ − x₂³) + b(x₁² − x₂²) + c(x₁ − x₂) = 0
+$$
+f(x_1) = f(x_2)
+$$
+
+$$
+a(x_1^3 - x_2^3) + b(x_1^2 - x_2^2) + c(x_1 - x_2) = 0
+$$
 
 Fatorando:
 
-a(x₁ − x₂)(x₁² + x₁x₂ + x₂²)
-+ b(x₁ − x₂)(x₁ + x₂)
-+ c(x₁ − x₂) = 0
+$$
+a(x_1 - x_2)(x_1^2 + x_1 x_2 + x_2^2)
++ b(x_1 - x_2)(x_1 + x_2)
++ c(x_1 - x_2) = 0
+$$
 
 Colocando em evidência:
 
-(x₁ − x₂)[a(x₁² + x₁x₂ + x₂²) + b(x₁ + x₂) + c] = 0
+$$
+(x_1 - x_2)\left[a(x_1^2 + x_1 x_2 + x_2^2) + b(x_1 + x_2) + c\right] = 0
+$$
 
 Como:
-x₁ ≠ x₂
+
+$$
+x_1 \ne x_2
+$$
 
 Então:
 
-a(x₁² + x₁x₂ + x₂²) + b(x₁ + x₂) + c = 0
+$$
+a(x_1^2 + x_1 x_2 + x_2^2) + b(x_1 + x_2) + c = 0
+$$
 
 ---
 
 ## Aproximação (ideia-chave)
 
-x₁ ≈ x₂ ≈ xᵥ
+$$
+x_1 \approx x_2 \approx x_v
+$$
 
 Substituindo:
 
-x₁² + x₁x₂ + x₂² ≈ 3xᵥ²  
-x₁ + x₂ ≈ 2xᵥ  
+$$
+x_1^2 + x_1 x_2 + x_2^2 \approx 3x_v^2
+$$
+
+$$
+x_1 + x_2 \approx 2x_v
+$$
 
 Logo:
 
-a(3xᵥ²) + b(2xᵥ) + c = 0
+$$
+a(3x_v^2) + b(2x_v) + c = 0
+$$
 
 ---
 
@@ -184,38 +219,63 @@ Esse método:
 ## Caso quadrático
 
 Se:
-f(x) = ax² + bx + c
+
+$$
+f(x) = ax^2 + bx + c
+$$
 
 Igualando:
-f(x₁) = f(x₂)
 
-a(x₁² − x₂²) + b(x₁ − x₂) = 0
+$$
+f(x_1) = f(x_2)
+$$
+
+$$
+a(x_1^2 - x_2^2) + b(x_1 - x_2) = 0
+$$
 
 Fatorando:
 
-a(x₁ − x₂)(x₁ + x₂) + b(x₁ − x₂) = 0
+$$
+a(x_1 - x_2)(x_1 + x_2) + b(x_1 - x_2) = 0
+$$
 
 Colocando em evidência:
 
-(x₁ − x₂)(a(x₁ + x₂) + b) = 0
+$$
+(x_1 - x_2)(a(x_1 + x_2) + b) = 0
+$$
 
 Como:
-x₁ ≠ x₂
+
+$$
+x_1 \ne x_2
+$$
 
 Então:
 
-a(x₁ + x₂) + b = 0
+$$
+a(x_1 + x_2) + b = 0
+$$
 
 ---
 
 ## Aproximação
 
-x₁ ≈ x₂ ≈ xᵥ
+$$
+x_1 \approx x_2 \approx x_v
+$$
 
-a(2xᵥ) + b = 0
+$$
+a(2x_v) + b = 0
+$$
 
-2axᵥ + b = 0
+$$
+2a x_v + b = 0
+$$
 
-xᵥ = -b / (2a)
+$$
+x_v = -\frac{b}{2a}
+$$
 
 ---
