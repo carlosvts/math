@@ -9,15 +9,15 @@ A estratégia usada é:
 - Tomar dois pontos próximos: \( x_1 \) e \( x_2 \)
 - Impor que:
   
-  \[
+  $$
   f(x_1) = f(x_2)
-  \]
+  $$
 
 - E então fazer:
 
-  \[
+  $$
   x_2 \to x_1
-  \]
+  $$
 
 Isso força o ponto a se tornar um extremo.
 
@@ -27,39 +27,39 @@ Isso força o ponto a se tornar um extremo.
 
 Função:
 
-\[
+$$
 f(x) = -2x^3 + 45x^2
-\]
+$$
 
 ### 1. Igualando valores
 
-\[
+$$
 f(x_1) = f(x_2)
-\]
+$$
 
-\[
+$$
 -2x_1^3 + 45x_1^2 = -2x_2^3 + 45x_2^2 \quad (I)
-\]
+$$
 
 ---
 
 ### 2. Reorganizando
 
-\[
+$$
 45(x_1^2 - x_2^2) = 2(x_1^3 - x_2^3)
-\]
+$$
 
 Fatorando:
 
-\[
+$$
 45(x_1 + x_2)(x_1 - x_2) = 2(x_1 - x_2)(x_1^2 + x_1x_2 + x_2^2)
-\]
+$$
 
 Cancelando \( (x_1 - x_2) \), com \( x_1 \ne x_2 \):
 
-\[
+$$
 45(x_1 + x_2) = 2(x_1^2 + x_1x_2 + x_2^2)
-\]
+$$
 
 ---
 
@@ -67,27 +67,27 @@ Cancelando \( (x_1 - x_2) \), com \( x_1 \ne x_2 \):
 
 Agora fazemos:
 
-\[
+$$
 x_2 \to x_1 \Rightarrow x_1 \approx x_2 \approx x_v
-\]
+$$
 
 Substituindo:
 
-\[
+$$
 45(2x_v) = 2(3x_v^2)
-\]
+$$
 
-\[
+$$
 90x_v = 6x_v^2
-\]
+$$
 
-\[
+$$
 15x_v = x_v^2
-\]
+$$
 
-\[
+$$
 x_v = 0 \quad \text{ou} \quad x_v = 15
-\]
+$$
 
 ---
 
@@ -103,7 +103,7 @@ x_v = 0 \quad \text{ou} \quad x_v = 15
        x1   xv    x2
 ```
 
-# Método de Fermat (pré-derivada) — reconstrução das anotações
+# Método de Fermat (pré-derivada) 
 
 ## Ideia geométrica (intuição)
 Considere dois pontos no gráfico com a mesma altura:
