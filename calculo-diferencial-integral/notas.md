@@ -144,3 +144,231 @@ A = \lim_{n \to \infty} \frac{1}{2} R^2 \cdot n \cdot \sin\left(\frac{2\pi}{n}\r
 $$
 
 Esse é um dos exemplos fundamentais da ideia de limite que motiva o cálculo integral.
+
+
+# Área de um Segmento de Parábola
+
+## (I) Construção geométrica
+
+Queremos calcular a área do segmento delimitado por uma parábola e uma corda.
+
+### Visualização inicial
+
+    A-------B
+     \     /
+      \   /
+       \_/
+
+A ideia é decompor a região em triângulos.
+
+Dividimos a figura:
+
+    A-------B
+     \  A  /
+      \   /
+       \_/
+        N
+
+Separando em dois triângulos:
+
+$$
+A_{\triangle ABP} = A_{\triangle AMA} + A_{\triangle ANB}
+$$
+
+Seja $MN$ a base comum e $m$ a altura:
+
+$$
+A = \frac{MN \cdot m}{2} + \frac{MN \cdot m}{2}
+$$
+
+$$
+A = MN \cdot m \quad (I)
+$$
+
+Pela propriedade de base média:
+
+$$
+MN + NS = \frac{AP + BP}{2}
+$$
+
+E como há simetria:
+
+$$
+MN = \frac{m}{2}
+$$
+
+Substituindo em (I):
+
+$$
+A_{\triangle ANB} = m^3
+$$
+
+---
+
+## (II) Modelagem com função
+
+Seja:
+
+$$
+f(x) = x^2
+$$
+
+Pontos no eixo:
+
+- $P = (a,0)$  
+- $S = (a+m,0)$  
+- $Q = (a+2m,0)$  
+
+Visualização:
+
+    P----S----Q
+    |    |    |
+    |    |    |
+    *    *    *
+   f(a) f(a+m) f(a+2m)
+
+Alturas:
+
+$$
+AP = f(a) = a^2
+$$
+
+$$
+NS = f(a+m) = (a+m)^2
+$$
+
+$$
+BQ = f(a+2m) = (a+2m)^2
+$$
+
+Substituindo na relação geométrica, obtemos:
+
+$$
+MN = m^2
+$$
+
+Logo:
+
+$$
+A_{\triangle ANB} = m^3
+$$
+
+---
+
+## Lei observada
+
+Cada novo triângulo gerado dentro do segmento tem área proporcional:
+
+$$
+A = m^3
+$$
+
+---
+
+## Construção iterativa
+
+Agora repetimos o processo dentro da parábola.
+
+### Primeira aproximação
+
+    A-------B
+     \     /
+      \   /
+       \_/
+        N
+
+Área:
+
+$$
+A_P = A_T
+$$
+
+---
+
+### Segunda etapa
+
+Inserimos novos triângulos:
+
+    A-------B
+     \ /\  /
+      X  X
+       \_/
+        N
+
+Área:
+
+$$
+A_P = A_T + \frac{A_T}{4}
+$$
+
+---
+
+### Terceira etapa
+
+Subdivisão recursiva:
+
+    A-------B
+     \/\ /\ /
+      X--X--X
+     /\/ \/ \
+        N
+
+Área:
+
+$$
+A_P = A_T + \frac{A_T}{4} + \frac{A_T}{16}
+$$
+
+---
+
+### Processo infinito
+
+Continuando:
+
+$$
+A_P = A_T + \frac{A_T}{4} + \frac{A_T}{16} + \frac{A_T}{64} + \dots
+$$
+
+---
+
+## Série geométrica
+
+Fatorando:
+
+$$
+A_P = A_T \left(1 + \frac{1}{4} + \frac{1}{16} + \frac{1}{64} + \dots \right)
+$$
+
+Razão:
+
+$$
+r = \frac{1}{4}
+$$
+
+Soma infinita:
+
+$$
+\sum = \frac{1}{1 - r} = \frac{1}{1 - \frac{1}{4}} = \frac{4}{3}
+$$
+
+---
+
+## Resultado final
+
+$$
+A_P = \frac{4}{3} A_T
+$$
+
+---
+
+## Conclusão geométrica
+
+A área do segmento de parábola é:
+
+$$
+\frac{4}{3}
+$$
+
+da área do triângulo inicial.
+
+Esse resultado surge naturalmente ao repetir infinitamente o processo de subdivisão.
