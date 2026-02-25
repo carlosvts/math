@@ -82,3 +82,21 @@ Considerando dois instantes de tempo distintos $t_1$ e $t_2$:
 $$\lim_{t_2 \to t_1} V_m = 2t_1$$
 Para o caso específico de $t = 1s$:
 $$V_{inst} = 2(1) = 2 \, m/s$$
+
+
+## A Regra do Tombo (Power Rule)
+
+Existe uma propriedade geral para derivadas de funções potências que simplifica o processo de limite. Basicamente, o expoente "cai" para a esquerda multiplicando a base, e o novo expoente é subtraído em uma unidade.
+
+### Regra Geral
+Para uma função do tipo $f(x) = x^n$, a sua derivada $f'(x)$ será:
+$$f'(x) = n \cdot x^{n-1}$$
+
+### Exemplos Práticos
+* **Caso $x^3$:** O $3$ desce multiplicando e o expoente vira $3-1=2$.
+    $$x^3 \implies 3x^2$$
+* **Caso $x^2$ (O problema anterior):** O $2$ desce e o expoente vira $2-1=1$.
+    $$x^2 \implies 2x^1 = 2x$$
+* **Caso $x^{100}$:** $$x^{100} \implies 100x^{99}$$
+
+> **Conexão com os problemas anteriores:** > Na nossa análise de $s(t) = t^2$, chegamos ao resultado $2t$ através do limite. A Regra do Tombo confirma esse resultado de forma instantânea: ao "tombar" o expoente $2$, obtemos diretamente $2t^1$, validando toda a nossa construção algébrica.
