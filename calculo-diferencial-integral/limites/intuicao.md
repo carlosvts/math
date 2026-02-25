@@ -1,20 +1,6 @@
 # Limites: Intuição e Problemas
 
-## Problema 01: O Barco e a Corda
-
-```text
-       Pescador
-          O
-         /|        Corda
-        / |_________________  V (Velocidade da corda)
-          |                /
-          |      \theta   /  Barco
-   _______|__________.---/____ > (Velocidade do barco?)
-          |~~~~~~~~~/~~~~~~~|
-          |~~~~~~~~~~~~~~~~~|
-```
-
-## Problema 02: Velocidade Instantânea
+## Problema 01: Velocidade Instantânea
 
 Um carro se move pela função de posição $s(t) = t^2$. Qual sua velocidade em $t = 1s$?
 
